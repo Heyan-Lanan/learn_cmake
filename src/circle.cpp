@@ -11,6 +11,10 @@ Circle::Circle(double R){
     this->r = R;
 }
 
-double Circle::Area(){
+double Circle::Area() const{
     return 3.14 * r * r;
+}
+
+double cal(double r){
+    return 2 * 3.14 * r;
 }

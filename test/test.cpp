@@ -3,6 +3,7 @@
 //
 #include <iostream>
 #include "circle.hpp"
+#include "circumference.hpp"
 using namespace std;
 
 int main(int argc, char const *argv[]){
@@ -12,5 +13,8 @@ int main(int argc, char const *argv[]){
     for (int i = 0; i < argc; ++i) {
         cout << argv[i] << endl;
     }
+
+    circumference c1(3);
+    cout << "Circumference = " << c1.cir() << endl;
     return 0;
 }
